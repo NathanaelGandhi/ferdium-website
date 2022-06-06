@@ -51,9 +51,12 @@ const Download = (props: Props) => {
         />
         <CodeBlockSection title='Scoop (Windows)' text='scoop install ferdium-nightly' />
         <CodeBlockSection
-          title='Snap (Ubuntu linux and derivatives)'
+          title='Snap (Ubuntu linux and derivatives) Edge'
           text={`snap install --edge ferdium\nsnap connect ferdium:camera\nsnap connect ferdium:audio-record`}
         />
+        <CodeBlockSection 
+          title='Snap (Ubuntu linux and derivatives) Beta'
+          text='snap install --beta ferdium\nsnap connect ferdium:camera\nsnap connect ferdium:audio-record' />
       </Section>
     </Layout>
   );
